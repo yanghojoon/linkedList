@@ -58,4 +58,14 @@ struct LinkedList<Type> {
         
         return data
     }
+    
+    func peek() -> Type? {
+        if isEmpty == true {
+            return nil
+        }
+        
+        let data = head?.data
+        
+        return data
+    }
 }
