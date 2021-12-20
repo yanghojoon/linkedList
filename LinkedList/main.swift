@@ -34,5 +34,17 @@ struct LinkedList<Type> {
     
     var isEmpty: Bool {
         head == nil
-    }   
+    }
+    
+    mutating func enqueue(_ data: Type) {
+        let node = Node(data: data)
+        
+        if let tail = tail {
+            tail.next = node
+            self.tail = tail.next
+        } else {
+            self.head = node
+            self.tail = node
+        }
+    }
 }
