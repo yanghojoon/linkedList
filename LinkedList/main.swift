@@ -68,4 +68,11 @@ struct LinkedList<Type> {
         
         return data
     }
+    
+    mutating func clear() {
+        while tail?.next != nil {
+            head = nil
+            head = head?.next
+        }
+    }
 }
