@@ -28,4 +28,11 @@ extension Node: CustomStringConvertible {
     }
 }
 
-
+struct LinkedList<Type> {
+    var head: Node<Type>?
+    var tail: Node<Type>?
+    
+    var isEmpty: Bool {
+        head == nil
+    }   
+}
