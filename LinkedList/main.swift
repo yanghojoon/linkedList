@@ -47,4 +47,15 @@ struct LinkedList<Type> {
             self.tail = node
         }
     }
+    
+    mutating func dequeue() -> Type? {
+        if isEmpty == true {
+            return nil
+        }
+        
+        let data = head?.data
+        head = head?.next
+        
+        return data
+    }
 }
