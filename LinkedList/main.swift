@@ -48,6 +48,7 @@ struct LinkedList<Type> {
         }
     }
     
+    @discardableResult
     mutating func dequeue() -> Type? {
         let firstData = head?.data
         head = head?.next

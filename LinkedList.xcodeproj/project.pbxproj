@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE234FDD2771FA11000F253F /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE234FDC2771FA11000F253F /* LinkedListTest.swift */; };
+		DE234FE12771FA15000F253F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED04436277087D90072E5E6 /* main.swift */; };
 		DED04437277087D90072E5E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED04436277087D90072E5E6 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +25,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE234FDA2771FA11000F253F /* LinkedListTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE234FDC2771FA11000F253F /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		DED04433277087D90072E5E6 /* LinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED04436277087D90072E5E6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE234FD72771FA11000F253F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DED04430277087D90072E5E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE234FDB2771FA11000F253F /* LinkedListTest */ = {
+			isa = PBXGroup;
+			children = (
+				DE234FDC2771FA11000F253F /* LinkedListTest.swift */,
+			);
+			path = LinkedListTest;
+			sourceTree = "<group>";
+		};
 		DED0442A277087D90072E5E6 = {
 			isa = PBXGroup;
 			children = (
 				DED04435277087D90072E5E6 /* LinkedList */,
+				DE234FDB2771FA11000F253F /* LinkedListTest */,
 				DED04434277087D90072E5E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DED04433277087D90072E5E6 /* LinkedList */,
+				DE234FDA2771FA11000F253F /* LinkedListTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +86,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DE234FD92771FA11000F253F /* LinkedListTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE234FE02771FA11000F253F /* Build configuration list for PBXNativeTarget "LinkedListTest" */;
+			buildPhases = (
+				DE234FD62771FA11000F253F /* Sources */,
+				DE234FD72771FA11000F253F /* Frameworks */,
+				DE234FD82771FA11000F253F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedListTest;
+			productName = LinkedListTest;
+			productReference = DE234FDA2771FA11000F253F /* LinkedListTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DED04432277087D90072E5E6 /* LinkedList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DED0443A277087D90072E5E6 /* Build configuration list for PBXNativeTarget "LinkedList" */;
@@ -92,6 +130,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					DE234FD92771FA11000F253F = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					DED04432277087D90072E5E6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -111,11 +152,31 @@
 			projectRoot = "";
 			targets = (
 				DED04432277087D90072E5E6 /* LinkedList */,
+				DE234FD92771FA11000F253F /* LinkedListTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DE234FD82771FA11000F253F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		DE234FD62771FA11000F253F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE234FE12771FA15000F253F /* main.swift in Sources */,
+				DE234FDD2771FA11000F253F /* LinkedListTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DED0442F277087D90072E5E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +188,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DE234FDE2771FA11000F253F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yagom.LinkedListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DE234FDF2771FA11000F253F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yagom.LinkedListTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DED04438277087D90072E5E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +364,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE234FE02771FA11000F253F /* Build configuration list for PBXNativeTarget "LinkedListTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE234FDE2771FA11000F253F /* Debug */,
+				DE234FDF2771FA11000F253F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DED0442E277087D90072E5E6 /* Build configuration list for PBXProject "LinkedList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
