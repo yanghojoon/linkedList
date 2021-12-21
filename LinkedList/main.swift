@@ -55,13 +55,7 @@ struct LinkedList<Type> {
     }
     
     func peek() -> Type? {
-        if isEmpty == true {
-            return nil
-        }
-        
-        let data = head?.data
-        
-        return data
+        return head?.data
     }
     
     mutating func clear() {
