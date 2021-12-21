@@ -38,12 +38,12 @@ struct LinkedList<Type> {
     mutating func enqueue(_ data: Type) {
         let node = Node(data: data)
         
-        if let tail = tail {
-            tail.next = node
-            self.tail = tail.next
+        if let nextNode = tail {
+            nextNode.next = node
+            tail = nextNode.next
         } else {
-            self.head = node
-            self.tail = node
+            head = node
+            tail = node
         }
     }
     
