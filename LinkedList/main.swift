@@ -17,16 +17,6 @@ class Node<Type> {
     }
 }
 
-extension Node: CustomStringConvertible {
-    var description: String {
-        guard let next = next else {
-            return "\(data)"
-        }
-        
-        return "\(data) ->" + String(describing: next) + " "
-    }
-}
-
 struct LinkedList<Type> {
     var head: Node<Type>?
     var tail: Node<Type>?
