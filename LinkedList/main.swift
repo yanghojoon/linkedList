@@ -48,14 +48,10 @@ struct LinkedList<Type> {
     }
     
     mutating func dequeue() -> Type? {
-        if isEmpty == true {
-            return nil
-        }
-        
-        let data = head?.data
+        let firstData = head?.data
         head = head?.next
         
-        return data
+        return firstData
     }
     
     func peek() -> Type? {
