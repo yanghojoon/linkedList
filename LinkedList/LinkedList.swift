@@ -21,6 +21,8 @@ class DoublyLinkedList<T> {
     typealias Node = LinkedListNode<T>
     
     private var head: Node?
+    
+    // MARK: - Computed Property(LinkedList의 상태)
     var isEmpty: Bool {
         return head == nil
     }
@@ -48,6 +50,8 @@ class DoublyLinkedList<T> {
         }
         return count
     }
+    
+    // MARK: - Method
     func append(value: T) {
         let newNode = Node(value: value)
         if let lastNode = last { // last가 nil이면 아예 list에 node가 없는 상황.
@@ -55,6 +59,22 @@ class DoublyLinkedList<T> {
             lastNode.next = newNode
         } else {
             head = newNode
+        }
+    }
+    
+    func findNode(at index: Int) -> Node {
+        if index == 0 {
+            return head!
+        } else {
+            var node = head!.next
+            for _ in 1..<index {
+                node = node?.next
+                if node == nil { // 노드가 가지고 있는 Index를 벗어날 경우 크래쉬 발생
+                    break
+                }
+            }
+            
+            return node!
         }
     }
 }
