@@ -36,9 +36,21 @@ class DoublyLinkedList<T> {
         }
         return node
     }
+    var count: Int {
+        guard var node = head else {
+            return 0
+        }
+        var count = 1 // head만 있으면 node.next가 없기 때문에, while문이 안돌고 1 return
+        
+        while let next = node.next {
+            node = next
+            count += 1
+        }
+        return count
+    }
     func append(value: T) {
         let newNode = Node(value: value)
-        if let lastNode = last { // last가 nil이면 아예 list에 node가 없는 상황. 
+        if let lastNode = last { // last가 nil이면 아예 list에 node가 없는 상황.
             newNode.previous = lastNode
             lastNode.next = newNode
         } else {
