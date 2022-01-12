@@ -27,7 +27,7 @@ class DoublyLinkedList<T> {
     var first: Node? {
         return head
     }
-    // tail을 만들었다면 last는 바로 return tail을 해주면 됨. 
+    // tail을 만들었다면 last는 바로 return tail을 해주면 됨.
     var last: Node? {
         guard var node = head else { return }
         
@@ -35,5 +35,14 @@ class DoublyLinkedList<T> {
             node = next
         }
         return node
+    }
+    func append(value: T) {
+        let newNode = Node(value: value)
+        if let lastNode = last { // last가 nil이면 아예 list에 node가 없는 상황. 
+            newNode.previous = lastNode
+            lastNode.next = newNode
+        } else {
+            head = newNode
+        }
     }
 }
