@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE234FDD2771FA11000F253F /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE234FDC2771FA11000F253F /* LinkedListTest.swift */; };
 		DE234FE12771FA15000F253F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED04436277087D90072E5E6 /* main.swift */; };
+		DE31050F278E5D2900BF1EA5 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE31050E278E5D2900BF1EA5 /* LinkedList.swift */; };
 		DED04437277087D90072E5E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED04436277087D90072E5E6 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		DE234FDA2771FA11000F253F /* LinkedListTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE234FDC2771FA11000F253F /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		DE31050E278E5D2900BF1EA5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		DED04433277087D90072E5E6 /* LinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED04436277087D90072E5E6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DED04436277087D90072E5E6 /* main.swift */,
+				DE31050E278E5D2900BF1EA5 /* LinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE31050F278E5D2900BF1EA5 /* LinkedList.swift in Sources */,
 				DED04437277087D90072E5E6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
