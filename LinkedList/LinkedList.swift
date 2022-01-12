@@ -31,7 +31,7 @@ class DoublyLinkedList<T> {
     }
     // tail을 만들었다면 last는 바로 return tail을 해주면 됨.
     var last: Node? {
-        guard var node = head else { return }
+        guard var node = head else { return nil }
         
         while let next = node.next {
             node = next
